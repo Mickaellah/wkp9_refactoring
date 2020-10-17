@@ -1,0 +1,26 @@
+{
+  "name": "wkp9_refactoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mickaellah/wkp9_refactoring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/Mickaellah/wkp9_refactoring/issues"
+  },
+  "homepage": "https://github.com/Mickaellah/wkp9_refactoring#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
