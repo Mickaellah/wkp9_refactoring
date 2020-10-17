@@ -1,5 +1,5 @@
 body {
-    max-width: 800px;
+    max-width: 900px;
     margin-inline-start: auto;
     margin-inline-end: auto;
     color: #0e172c;
@@ -24,7 +24,7 @@ body {
 
 .headingContainer {
     display: grid;
-    grid-template-columns: 250px 100px auto;
+    grid-template-columns: 250px 200px auto;
 }
 
 .headingContainer > p:nth-of-type(2) {
@@ -32,7 +32,15 @@ body {
 }
 
 .headingContainer > p {
-    margin-block-start: 24px;
+    margin-block-start: 20px;
+}
+
+.subHeading {
+    font-size: 24px;
+}
+
+b {
+    font-size: 20px;
 }
 
 

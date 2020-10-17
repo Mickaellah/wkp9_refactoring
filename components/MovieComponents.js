@@ -21,13 +21,13 @@ const MovieComponents = () => {
                 <article className="container">
                     <div className="headingContainer">
                         <h2 className="subHeading">{movie.title}</h2>
-                        <p>{movie.release_date}</p>
-                        <p>{movie.rt_score}</p>
+                        <p><b>Released date:</b> {movie.release_date}</p>
+                        <p><b>Score rate:</b> {movie.rt_score}</p>
                     </div>
                     <p>{movie.description}</p>
                     <div className="name">
-                        <p>{movie.director}</p>
-                        <p className="producer">{movie.producer}</p>
+                        <p><b>Director:</b>Director: {movie.director}</p>
+                        <p className="producer"><b>Producer:</b> {movie.producer}</p>
                     </div>
                 </article>
             )

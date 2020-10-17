@@ -28342,11 +28342,11 @@ const MovieComponents = () => {
     className: "headingContainer"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "subHeading"
-  }, movie.title), /*#__PURE__*/_react.default.createElement("p", null, movie.release_date), /*#__PURE__*/_react.default.createElement("p", null, movie.rt_score)), /*#__PURE__*/_react.default.createElement("p", null, movie.description), /*#__PURE__*/_react.default.createElement("div", {
+  }, movie.title), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Released date:"), " ", movie.release_date), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Score rate:"), " ", movie.rt_score)), /*#__PURE__*/_react.default.createElement("p", null, movie.description), /*#__PURE__*/_react.default.createElement("div", {
     className: "name"
-  }, /*#__PURE__*/_react.default.createElement("p", null, movie.director), /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Director:"), "Director: ", movie.director), /*#__PURE__*/_react.default.createElement("p", {
     className: "producer"
-  }, movie.producer)))));
+  }, /*#__PURE__*/_react.default.createElement("b", null, "Producer:"), " ", movie.producer)))));
 };
 
 var _default = MovieComponents;
