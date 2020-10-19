@@ -49,7 +49,3 @@ b {
     grid-template-columns: repeat(2, 2fr);
     font-weight: 700;
 }
-
-.producer {
-    /* margin-inline-start: -64px; */
-}
