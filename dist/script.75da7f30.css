@@ -24,7 +24,7 @@ body {
 
 .headingContainer {
     display: grid;
-    grid-template-columns: 250px 200px auto;
+    grid-template-columns: auto auto auto;
 }
 
 .headingContainer > p:nth-of-type(2) {
@@ -51,7 +51,7 @@ b {
 }
 
 .producer {
-    margin-inline-start: -64px;
+    /* margin-inline-start: -64px; */
 }
 
 
