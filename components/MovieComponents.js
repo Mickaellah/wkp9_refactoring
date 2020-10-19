@@ -16,8 +16,9 @@ const MovieComponents = () => {
 
     return (
         <div>
-            {movies.map((movie) => 
-                <article className="container">
+            {(movies.length === 0) ? <p>Loading...</p> : ''}
+            {movies.sort((a, b) => b.rt_score - a.rt_score).map((movie) => 
+                <article className="container" key={movie.id}>
                     <div className="headingContainer">
                         <h2 className="subHeading">{movie.title}</h2>
                         <p><b>Released date:</b> {movie.release_date}</p>

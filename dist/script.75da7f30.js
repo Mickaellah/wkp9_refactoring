@@ -28297,7 +28297,6 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import "./style.css";
 function Header() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "header"
@@ -28322,7 +28321,6 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-// import '../styles.css'
 const MovieComponents = () => {
   const [movies, setMovies] = (0, _react.useState)([]);
 
@@ -28336,8 +28334,9 @@ const MovieComponents = () => {
   (0, _react.useEffect)(() => {
     fetchMovies();
   }, []);
-  return /*#__PURE__*/_react.default.createElement("div", null, movies.map(movie => /*#__PURE__*/_react.default.createElement("article", {
-    className: "container"
+  return /*#__PURE__*/_react.default.createElement("div", null, movies.length === 0 ? /*#__PURE__*/_react.default.createElement("p", null, "Loading...") : '', movies.sort((a, b) => b.rt_score - a.rt_score).map(movie => /*#__PURE__*/_react.default.createElement("article", {
+    className: "container",
+    key: movie.id
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "headingContainer"
   }, /*#__PURE__*/_react.default.createElement("h2", {
@@ -28487,7 +28486,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64163" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49299" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
