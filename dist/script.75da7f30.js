@@ -28344,7 +28344,7 @@ const MovieComponents = () => {
     className: "subHeading"
   }, movie.title), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Released date:"), " ", movie.release_date), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Score rate:"), " ", movie.rt_score)), /*#__PURE__*/_react.default.createElement("p", null, movie.description), /*#__PURE__*/_react.default.createElement("div", {
     className: "name"
-  }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Director:"), "Director: ", movie.director), /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Director:"), " ", movie.director), /*#__PURE__*/_react.default.createElement("p", {
     className: "producer"
   }, /*#__PURE__*/_react.default.createElement("b", null, "Producer:"), " ", movie.producer)))));
 };
@@ -28487,7 +28487,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57441" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64163" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

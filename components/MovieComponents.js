@@ -26,7 +26,7 @@ const MovieComponents = () => {
                     </div>
                     <p>{movie.description}</p>
                     <div className="name">
-                        <p><b>Director:</b>Director: {movie.director}</p>
+                        <p><b>Director:</b> {movie.director}</p>
                         <p className="producer"><b>Producer:</b> {movie.producer}</p>
                     </div>
                 </article>
